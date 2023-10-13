@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Audiowide, sans-serif;
+    background:linear-gradient(45deg, rgb(100, 100, 228), rgb(49, 238, 156)) ;
+}
+
+h3{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+}
+
+p.intro{
+    text-transform: capitalize;
+    margin: 50px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.current-year{
+    font-size: 22px;
+    color: rgb(180, 71, 16);
+    
+}
+
+.container{
+    background-color: transparent;
+    box-shadow: 3px 4px 10px rgba(0,0,0,.5);
+    width: 400px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.year{
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(45deg, rgb(49, 238, 156),rgb(100, 100, 228));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -70px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.time{
+    display: flex;
+    font-size: 20px;
+    position: relative;
+    margin: 0 15px;
+}
+
+.days, .minutes, .hours, .seconds{
+    margin: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+
